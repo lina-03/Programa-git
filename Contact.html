@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de contacto</title>
+    <link rel="stylesheet" href="stylecontac.css">
+</head>
+<body>
+
+
+    <div class="contact-container">
+        <h1>Contacto</h1>
+        <div class="contact-info">
+            <div class="contact-item">
+                <img src="imagen/img.gmail.jpg" alt="Gmail">
+                <p>contactosport&m@gmail.com</p>
+            </div>
+            <div class="contact-item">
+                <img src="imagen/img.ubica.jpg" alt="Ubicación">
+                <p>Av. 16 de Julio, B.A</p>
+            </div>
+            <div class="contact-item">
+                <img src="imagen/img.tele.jpg" alt="Teléfono">
+                <p>3012048261</p>
+            </div>
+        </div>
+        <div class="social-icons">
+            <img src="imagen/img.face.jpg" alt="Facebook">
+            <img src="imagen/img.twit.jpg" alt="Twitter">
+            <img src="imagen/img.insta.jpg" alt="Instagram">
+        </div>
+        <form action="procesar_formulario.php" method="POST">
+            <div class="form-item">
+                <label for="nombre">Nombre</label>
+                <input type="text" id="nombre" name="nombre" required>
+            </div>
+            <div class="form-item">
+                <label for="correo">Correo Electrónico</label>
+                <input type="email" id="correo" name="correo" required>
+            </div>
+            <div class="form-item">
+                <label for="asunto">Asunto</label>
+                <input type="text" id="asunto" name="asunto" required>
+            </div>
+            <div class="form-item">
+                <label for="mensaje">Mensaje</label>
+                <textarea id="mensaje" name="mensaje" required></textarea>
+            </div>
+            <button type="submit">Enviar</button>
+        </form>
+    </div>
+
+
+
+
+
+
+
+
+
+
+    
+</body>
+</html>
